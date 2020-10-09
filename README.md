@@ -26,16 +26,27 @@ Notice the contents in the square brackets matches exactly the name of the profi
 
 ## Instructions
 
+Firstly initialise the Terraform provider by doing: 
+
 ```
 terraform init
 ```
+
+Then run a plan, it will ask you for the required variables. You can also see the variables listed in the [variables.tf](./variables.tf) file.
 
 ```
 terraform plan
 ```
 
+If the plan looks good then run the apply, entering the same variables when requested.
 ```
 terraform apply
+```
+
+If you wish to remove all the infrastructure created by Terraform you can do:
+
+```
+terraform destroy
 ```
 
 ## Notes
