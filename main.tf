@@ -10,7 +10,7 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {
     region    = var.aws_region
-    profile   = "terraform"
+    profile   = "terraformuser"
 }
 
 # For this guide we'll just utilise the default VPC
